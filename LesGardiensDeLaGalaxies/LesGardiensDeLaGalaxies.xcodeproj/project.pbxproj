@@ -16,6 +16,7 @@
 		0E6889EA2B7922E7006706B9 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6889E92B7922E7006706B9 /* Guardian.swift */; };
 		0E6889EC2B792341006706B9 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6889EB2B792341006706B9 /* Datas.swift */; };
 		0E6889EE2B792CE1006706B9 /* GuardianCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6889ED2B792CE1006706B9 /* GuardianCell.swift */; };
+		0E6889F02B7938ED006706B9 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6889EF2B7938ED006706B9 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0E6889E92B7922E7006706B9 /* Guardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
 		0E6889EB2B792341006706B9 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 		0E6889ED2B792CE1006706B9 /* GuardianCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianCell.swift; sourceTree = "<group>"; };
+		0E6889EF2B7938ED006706B9 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0E6889E92B7922E7006706B9 /* Guardian.swift */,
 				0E6889EB2B792341006706B9 /* Datas.swift */,
 				0E6889ED2B792CE1006706B9 /* GuardianCell.swift */,
+				0E6889EF2B7938ED006706B9 /* DetailController.swift */,
 			);
 			path = LesGardiensDeLaGalaxies;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6889EA2B7922E7006706B9 /* Guardian.swift in Sources */,
+				0E6889F02B7938ED006706B9 /* DetailController.swift in Sources */,
 				0E6889DA2B791E71006706B9 /* ViewController.swift in Sources */,
 				0E6889EC2B792341006706B9 /* Datas.swift in Sources */,
 				0E6889D62B791E71006706B9 /* AppDelegate.swift in Sources */,

@@ -13,10 +13,19 @@ class ViewController: UIViewController {
     
     var guardians = Datas().guardians
     let cellID = "GuardianCell"
+    let segueID = "ToDetail"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let detail = segue.destination as? DetailController {
+                detail.guardian = sender as? Guardian
+            }
+        }
     }
 }
 
@@ -45,7 +54,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(guardians[indexPath.row].name)
+        let guardianSelected = guardians[indexPath.row]
+        performSegue(withIdentifier: segueID, sender: guardianSelected)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -26,7 +26,7 @@
                                 <rect key="frame" x="5" y="200" width="383" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuardianCell" rowHeight="117" id="SOJ-Ce-I1o" customClass="GuardianCell" customModule="LesGardiensDeLaGalaxies" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GuardianCell" rowHeight="117" id="SOJ-Ce-I1o" customClass="GuardianCell" customModule="LesGardiensDeLaGalaxies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="383" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOJ-Ce-I1o" id="2Ec-6V-aPE">
@@ -78,17 +78,17 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="DoO-iz-bPd" id="2KP-yP-vta"/>
-                        <segue destination="frk-7f-BiZ" kind="show" id="Qv4-QI-seH"/>
+                        <segue destination="frk-7f-BiZ" kind="show" identifier="ToDetail" id="Qv4-QI-seH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Controller-->
         <scene sceneID="l5M-65-lIo">
             <objects>
-                <viewController id="frk-7f-BiZ" sceneMemberID="viewController">
+                <viewController id="frk-7f-BiZ" customClass="DetailController" customModule="LesGardiensDeLaGalaxies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P2Q-Wn-V7n">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-II-veV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-II-veV">
                                 <rect key="frame" x="20" y="268" width="353" height="574"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -140,6 +140,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5eK-OE-l8a"/>
+                    <connections>
+                        <outlet property="descLbl" destination="dfQ-II-veV" id="KS9-fF-q0U"/>
+                        <outlet property="nameLbl" destination="03M-pR-g8r" id="4Ee-W5-f0v"/>
+                        <outlet property="profileView" destination="QJ9-ao-net" id="q6p-mq-L1G"/>
+                        <outlet property="topView" destination="jZw-Hd-xqM" id="KdZ-i0-kTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esw-kZ-w8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
