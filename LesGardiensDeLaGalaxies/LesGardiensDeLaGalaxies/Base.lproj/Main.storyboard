@@ -26,7 +26,7 @@
                                 <rect key="frame" x="5" y="200" width="383" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="SOJ-Ce-I1o">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuardianCell" rowHeight="117" id="SOJ-Ce-I1o" customClass="GuardianCell" customModule="LesGardiensDeLaGalaxies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="383" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOJ-Ce-I1o" id="2Ec-6V-aPE">
@@ -56,6 +56,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="ec8-z9-G7l" secondAttribute="trailing" constant="5" id="XbG-BW-xYq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageV" destination="F5W-pc-gp3" id="TAy-yS-RcI"/>
+                                            <outlet property="nameLbl" destination="ec8-z9-G7l" id="VzM-pQ-lIN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -73,6 +77,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="DoO-iz-bPd" id="2KP-yP-vta"/>
                         <segue destination="frk-7f-BiZ" kind="show" id="Qv4-QI-seH"/>
                     </connections>
                 </viewController>

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Gardian {
+struct Guardian {
 var name: String
 var desc: String
 var imagePath: String
